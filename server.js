@@ -14,7 +14,7 @@ const animalsDB = require('./routes/animalsDB')
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({'extended':'false'}))
-app.use(express.static(path.join(__dirname, 'client/build')))
+app.use(express.static(path.join(__dirname, 'myclient/build')))
 
 app.use('/api/auth', auth)
 app.use('/api/book', book)
